@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import path from "path";
 import { createServer as createViteServer } from "vite";
-import connectDB from "./server/config/db";
+import connectDB from "./server/config/db.ts";
 import authRoutes from "./server/routes/authRoutes";
 import complaintRoutes from "./server/routes/complaintRoutes";
 import lostFoundRoutes from "./server/routes/lostFoundRoutes";
