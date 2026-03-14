@@ -3,13 +3,13 @@ import cors from "cors";
 import path from "path";
 import { createServer as createViteServer } from "vite";
 import connectDB from "./server/config/db.ts";
-import authRoutes from "./server/routes/authRoutes";
-import complaintRoutes from "./server/routes/complaintRoutes";
-import lostFoundRoutes from "./server/routes/lostFoundRoutes";
+import authRoutes from "./server/routes/authRoutes.ts";
+import complaintRoutes from "./server/routes/complaintRoutes.ts";
+import lostFoundRoutes from "./server/routes/lostFoundRoutes.ts";
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   // Connect to database
   await connectDB();
