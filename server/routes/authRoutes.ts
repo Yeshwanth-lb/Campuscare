@@ -6,8 +6,8 @@ import {
   getMe,
   changePassword,
   getAllStaff,
-} from '../controllers/authController';
-import { protect, authorize } from '../middleware/authMiddleware';
+} from '../controllers/authController.ts';
+import { protect, authorize } from '../middleware/authMiddleware.ts';
 
 router.post('/register', register);
 router.post('/login', login);
