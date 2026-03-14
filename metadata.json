@@ -1,0 +1,5 @@
+{
+  "name": "CampusCare",
+  "description": "A Campus Complaint and Lost-and-Found Management System with role-based access control for students, staff, and admins.",
+  "requestFramePermissions": []
+}
