@@ -8,9 +8,9 @@ import {
   updateItemStatus,
   deleteItem,
   getLostFoundStats,
-} from '../controllers/lostFoundController';
-import { protect } from '../middleware/authMiddleware';
-import upload from '../middleware/upload';
+} from '../controllers/lostFoundController.ts';
+import { protect } from '../middleware/authMiddleware.ts';
+import upload from '../middleware/upload.ts';
 
 router.route('/')
   .get(getAllItems)

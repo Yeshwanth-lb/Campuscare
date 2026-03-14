@@ -10,9 +10,9 @@ import {
   updateComplaintStatus,
   getComplaintStats,
   deleteComplaint,
-} from '../controllers/complaintController';
-import { protect, authorize } from '../middleware/authMiddleware';
-import upload from '../middleware/upload';
+} from '../controllers/complaintController.ts';
+import { protect, authorize } from '../middleware/authMiddleware.ts';
+import upload from '../middleware/upload.ts';
 
 router.route('/')
   .post(protect, upload.single('image'), createComplaint);
